@@ -1,0 +1,32 @@
+{
+  "name": "v1.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node-dev ./src/index.ts -P tsconfig.json --no-cache",
+    "build": "tsc -P tsconfig.json && node ./dist/index.js",
+    "tslint": "tslint --fix -p tsconfig.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^12.7.11",
+    "ts-node-dev": "^1.0.0-pre.43",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.3"
+  },
+  "dependencies": {
+    "koa": "^2.8.2",
+    "koa-body": "^4.1.1",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa-xtime": "^1.0.0",
+    "mysql2": "^1.7.0",
+    "parameter": "^3.6.0",
+    "reflect-metadata": "^0.1.13",
+    "sequelize": "^5.19.4",
+    "sequelize-typescript": "^1.0.0"
+  }
+}
